@@ -73,9 +73,14 @@ body {
 @media (max-width: 480px) {
 
   /* ナビ（メインページ） */
-  .header-main {
+  .nav-main {
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-main ul {
+    flex-direction: column;
+    text-align: center;
   }
 
   .logo-main {
