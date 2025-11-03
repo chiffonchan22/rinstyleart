@@ -23,17 +23,14 @@ body {
 
 .nav-main {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   position: absolute;
   width: 100%;
-  gap: 20px;
   color: white;
 }
 
 .logo-main {
-  margin-left: 330px;
-  margin-bottom: 20px;
   color: inherit;
   text-decoration: none;
   font-size: 38px !important;
@@ -45,7 +42,6 @@ body {
   list-style: none;
   flex-direction: column;
   text-align: left;
-  margin-right: 260px;
   line-height: 0.8;
 }
 
@@ -130,4 +126,144 @@ body {
 
 .section-photo {
   width: 600px;
+}
+
+/* ----------------------------------------------------
+   ① スマホ（〜480px）
+---------------------------------------------------- */
+@media (max-width: 480px) {
+
+  /* ナビ（メインページ） */
+  .nav-main {
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+  }
+
+  .nav-main ul {
+    gap: 16px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo-main {
+    font-size: 28px !important;
+  }
+
+  .nav-main a {
+    font-size: 20px;
+  }
+
+  /* メイン見出しなど縮小 */
+  .mainpage {
+    padding: 40px 15px;
+  }
+
+  .section-photo {
+    width: 90%;
+  }
+
+  /* その他ページのナビ */
+  .nav {
+    height: 60px;
+    justify-content: center;
+  }
+
+  .logo {
+    margin-left: 10px;
+    font-size: 28px !important;
+  }
+
+  .nav ul {
+    gap: 20px;
+    margin-right: 10px;
+  }
+
+  .nav a {
+    font-size: 18px;
+  }
+}
+
+
+/* ----------------------------------------------------
+   ② 小さめタブレット（481px〜768px）
+---------------------------------------------------- */
+@media (max-width: 768px) {
+
+  /* メインページナビ */
+  .nav-main {
+    justify-content: space-around;
+    padding: 0 20px;
+  }
+
+  .nav-main ul {
+    gap: 20px;
+  }
+
+  .logo-main {
+    font-size: 32px !important;
+  }
+
+  .nav-main a {
+    font-size: 22px;
+  }
+
+  /* メインコンテンツ */
+  .mainpage {
+    padding: 50px 20px;
+  }
+
+  .section-photo {
+    width: 80%;
+  }
+
+  /* その他ページナビ */
+  .nav {
+    height: 70px;
+  }
+
+  .nav ul {
+    gap: 24px;
+    margin-right: 20px;
+  }
+
+  .logo {
+    font-size: 32px !important;
+    margin-left: 20px;
+  }
+
+  .nav a {
+    font-size: 22px;
+  }
+}
+
+
+/* ----------------------------------------------------
+   ③ 横幅が狭いPC（769px〜1024px）
+---------------------------------------------------- */
+@media (max-width: 1024px) {
+
+  .nav-main {
+    padding: 0 30px;
+  }
+
+  .nav-main a {
+    font-size: 23px;
+  }
+
+  .mainpage {
+    padding: 60px 30px;
+  }
+
+  .section-photo {
+    width: 70%;
+  }
+
+  .nav {
+    padding: 0 30px;
+  }
+
+  .nav ul {
+    gap: 28px;
+  }
 }
