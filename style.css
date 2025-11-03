@@ -110,6 +110,7 @@ hr {
     padding: 0 20px;              /* 左右の余白を縮小 */
     height: 60px;                 /* 少し低めに */
     justify-content: space-between;
+    width: 100%;
   }
 
   .logo a {
