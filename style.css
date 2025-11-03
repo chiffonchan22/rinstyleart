@@ -98,3 +98,112 @@ hr {
 .text {
   text-align: center;
 }
+
+
+/* =============================
+   スマホ（〜480px）
+============================= */
+@media (max-width: 480px) {
+
+  /* 固定ナビ */
+  .nav {
+    padding: 0 20px;              /* 左右の余白を縮小 */
+    height: 60px;                 /* 少し低めに */
+    justify-content: space-between;
+  }
+
+  .logo a {
+    font-size: 26px !important;
+  }
+
+  .nav ul {
+    gap: 16px;                    /* ボタン間の間隔を縮小 */
+  }
+
+  .nav a {
+    font-size: 18px;
+  }
+
+  /* セクション */
+  .mainpage {
+    padding: 40px 15px;
+    max-width: 100%;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .section-photo {
+    width: 100%;                  /* 画像を画面幅に合わせる */
+  }
+
+  .section-text {
+    font-size: 16px;
+  }
+
+  .name {
+    padding: 20px;
+  }
+}
+
+
+/* =============================
+   タブレット（481〜768px）
+============================= */
+@media (max-width: 768px) {
+
+  .nav {
+    padding: 0 30px;
+    height: 70px;
+  }
+
+  .logo a {
+    font-size: 30px !important;
+  }
+
+  .nav ul {
+    gap: 24px;
+  }
+
+  .nav a {
+    font-size: 22px;
+  }
+
+  .mainpage {
+    padding: 50px 20px;
+    max-width: 90%;
+  }
+
+  .section-photo {
+    width: 90%;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+}
+
+
+/* =============================
+   小さめPC（769〜1024px）
+============================= */
+@media (max-width: 1024px) {
+
+  .nav {
+    padding: 0 40px;
+    height: 75px;
+  }
+
+  .nav ul {
+    gap: 28px;
+  }
+
+  .mainpage {
+    max-width: 85%;
+  }
+
+  .section-photo {
+    width: 80%;
+  }
+}
