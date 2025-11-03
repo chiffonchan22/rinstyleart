@@ -77,8 +77,6 @@ body {
   }
 
   .nav-main ul {
-    flex-direction: column;
-    text-align: center;
   }
 
   .logo-main {
